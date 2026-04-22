@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 38 30% 93%;
+    --card: 0 0% 8%;
+    --card-foreground: 38 30% 93%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 38 30% 93%;
+    --primary: 42 72% 55%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 38 30% 93%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 30 8% 50%;
+    --accent: 36 70% 45%;
+    --accent-foreground: 38 30% 93%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 42 72% 55% / 0.12;
+    --input: 0 0% 15%;
+    --ring: 42 72% 55%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 38 30% 93%;
+    --sidebar-primary: 42 72% 55%;
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 42 72% 55% / 0.1;
+    --sidebar-accent-foreground: 42 72% 55%;
+    --sidebar-border: 42 72% 55% / 0.08;
+    --sidebar-ring: 42 72% 55%;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+@layer base {
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
